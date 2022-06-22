@@ -16,7 +16,7 @@ class Maze:
         self.position = (self.x, self.y)
         self.player_position = self.board[self.x][self.y]
 
-    def movement(self):
+    def movement(self) -> None:
         """Movement of player through maze (Run through GUI)"""
 
         while self.x != self.height-1 and self.y != self.width-1:

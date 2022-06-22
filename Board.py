@@ -5,7 +5,7 @@ class Board:
         """Board constructor"""
         self.board = None
 
-    def grab_board(self, height: int, width: int):
+    def grab_board(self, height: int, width: int) -> list:
         if height == 15 and width == 14:
             self.board = [[7, 3, 12, 13, 10, 3, 3, 3, 3, 3, 3, 3, 3, 12],
                           [2, 7, 3, 3, 11, 3, 12, 13, 3, 3, 3, 3, 10, 6],

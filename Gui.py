@@ -30,7 +30,7 @@ class Gui:
         self.play_game_button = tk.Button(master=self.menu_frame, text="Play Game", bg="cyan2", command=self.play_game)
         self.play_game_button.pack()
 
-    def create_board(self, position):
+    def create_board(self, position: tuple) -> None:
         for element in self.game_frame.winfo_children():
             element.destroy()
         for x in range(self.maze.height):
@@ -91,7 +91,7 @@ class Gui:
                         canvas.create_oval(4, 2, 19, 18, fill="red")
         self.game_frame.pack()
 
-    def movement(self):
+    def movement(self) -> tuple:
         while True:
             user_input = keyboard.read_event(suppress=False)
             if user_input.event_type == "down":
@@ -182,7 +182,7 @@ class Gui:
         position = (self.maze.x, self.maze.y)
         return position
 
-    def play_game(self):
+    def play_game(self) -> None:
         """Allows player to move through maze and issues reward"""
         movement = (self.movement())
         if movement == self.maze.finish:
