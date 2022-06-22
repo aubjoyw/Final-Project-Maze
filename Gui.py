@@ -1,7 +1,6 @@
 import tkinter as tk
 import keyboard
 from PIL import ImageTk, Image
-
 from Maze import Maze
 
 
@@ -184,6 +183,7 @@ class Gui:
         return position
 
     def play_game(self):
+        """Allows player to move through maze and issues reward"""
         movement = (self.movement())
         if movement == self.maze.finish:
             for element in self.game_frame.winfo_children():

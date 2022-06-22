@@ -1,7 +1,7 @@
 # Final-Project
 ### Final Project for CSCI-127
 
-I created a maze that a person can move through and complete using a GUI and two classes.
+I created a maze that a person can move through and complete (gaining a reward) using a GUI and two classes.
 The two class being the Maze class and the Board class. The maze class compiles all the information
 relating to the maze that can be navigated, while the board class allows different mazes to be chosen from.
 Currently, the board class only contains one maze template, but allows for expansion. The majority of the
